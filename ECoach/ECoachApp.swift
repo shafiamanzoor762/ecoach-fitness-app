@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct ECoachApp: App {
+    @StateObject private var appData = AppData()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if appData.isLoggedIn {
+                            ContentView()
+                                .environmentObject(appData)
+                        } else {
+                            AuthView()
+                                .environmentObject(appData)
+                        }
         }
     }
 }

@@ -31,4 +31,4 @@ It helps users stay motivated by managing health goals, workouts, nutrition, and
 
 1. Clone the repository  
    ```bash
-   git clone https://github.com/yourusername/E-COACH.git
+   git clone https://github.com/shafiamanzoor762/ecoach-fitness-app.git
